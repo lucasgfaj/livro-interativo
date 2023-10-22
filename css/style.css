@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Atribuindo a imagem de fundo */
+html {
+  background-image: url("../img/blue-snow.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* O mínimo de altura da tela do navegador (viewport height) */
+}
+
+/* navbar de receitas lucas com Display Flex*/
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #9a9bcf4b;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* logo dentro da nossa navbar */
+.logo {
+  flex: 20%;
+  margin-left: 1%;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+/* editando apenas o titulo da nossa logo */
+.logo h1 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 28px;
+  color: black;
+}
+
+/* Menu - Página Inicial e Próxima Página */
+.menu {
+  flex: 70%;
+  /* border: 1px solid black; */
+  text-align: right;
+  padding: 20px;
+}
+
+
+/* Editando apenas nosso <a linK> */
+.menu a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Adicionando um efeio quando for passado o cursor por cima */
+.menu a:hover {
+  border: 4px solid rgb(248, 248, 248);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+main {
+  flex: 1; /* O conteúdo principal ocupará todo o espaço disponível */
+}
+
+
+/* Nosso Header Index  */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: left;
+  padding: 28px;
+  /* border: 1px solid black; */
+}
+
+/* Editando apenas o tamanho do nosso H2 - Titulo */
+.header h2 {
+  font-size: 20px;
+}
+
+/* Conteúdo principal do index */
+.texto {
+  background-image: url("../img/dust_scratches.png");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 97%;
+  text-align: justify;
+  margin-left: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 30%;
+  height: auto;
+}
+
+/* Cria um layout flexível para os elementos internos */
+.content-container {
+  display: flex; /* Cria um layout flexível para os elementos internos */
+}
+
+/* O conteúdo de texto ocupará 1 parte do espaço flexível */
+.text-content {
+  flex: 1; 
+}
+
+/* Container da Imagem como Flex */
+.img-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 500px; /* Defina a altura como desejar */
+}
+
+/* Limite das Imagens */
+.img-container img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura da seção */
+}
+
+/* Estilização dos Paragráfos */
+.texto p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+/* Titulo da Nossa Próxima Página */
+#title {
+  text-transform: uppercase;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+/* Seção na qual possui nossos Cards */
+.cards {
+  display: block;
+  /* border: 1px solid black; */
+  padding: 10px;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+
+/* Card1 - Ingredientes */
+.card1 {
+  background-image: url("../img/dust_scratches.png");
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline-block;
+  text-align: justify;
+  border: 1px solid black;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.img-bolo { 
+  /* border: 1px solid black; */
+  flex: 1; 
+}
+
+.img-bolo img {
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 30em;
+  margin-left: 400px;
+  margin-bottom: 50px;
+}
+
+/* Card2 - Instruções */
+.card2 {
+  background-image: url("../img/dust_scratches.png");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+footer {
+  text-align: center;
+  background-color: #ffffff4b;
+  font-size: 16px;
+  height: 3.0rem;
+  line-height: 3.0rem; /* Para centralizar verticalmente o conteúdo do footer */
+}
+/* Fonte atribuida para todos h2 */
+h2 {
+  font-size: 30px;
+}
+
+/* Strong possuindo um upparcase que deixa todas as letras em caixa alta e tamanho da fonte*/
+strong {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+/* Estilização da tag - <em> possuindo texto justificado e caixa alta */
+em {
+  text-align: justify;
+  font-size: 1.60em;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase
+}
+
+/* Span possuindo underline que seria um risco pontilhado embaixo da frase  */
+span {
+  text-decoration: underline dotted;
+}
+
+/* Del com line-through no qual é riscado no meio a palavra */
+del {
+  text-decoration: line-through;
+}
+
+/* Possuindo um underline que seria um risco embaixo da frase */
+ins {
+  text-decoration: underline;
+}
+
+/* Diminuindo o tamanho das letras */
+small {
+  font-size: 75%; /* 0.75em ou .75em */
+}
+
+/* Risco na Tela para Inserir como um separador para uma class */
+.linha1 {
+  margin-top: 0px;
+}
