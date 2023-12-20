@@ -175,16 +175,16 @@ main {
   flex-wrap: wrap; 
 }
 
-.img-bolo { 
+.imgs { 
   /* border: 1px solid black; */
   flex: 1; 
 }
 
-.img-bolo img {
+.imgs img {
   border: 1px solid black;
   border-radius: 10px;
   max-width: 100%;
-  height: 10em;
+  height: 30em;
   margin-left: 400px;
   margin-bottom: 50px;
 }
